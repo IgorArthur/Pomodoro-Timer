@@ -15,7 +15,7 @@ extension AppFonts on Text {
     );
   }
 
-  Text headline1([Color? color]) {
+  Text headline2([Color? color]) {
     final TextStyle textStyle = GoogleFonts.lexend(
       fontWeight: FontWeight.w200,
       fontSize: 3.1.h,
@@ -25,7 +25,7 @@ extension AppFonts on Text {
     );
   }
 
-  Text headline2([Color? color]) {
+  Text headline1([Color? color]) {
     final TextStyle textStyle = GoogleFonts.lexend(
       fontWeight: FontWeight.w200,
       fontSize: 3.5.h,

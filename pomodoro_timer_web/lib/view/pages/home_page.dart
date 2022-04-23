@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pomodoro_timer/view/utils/export_utils.dart';
+import 'package:pomodoro_timer/view/export_views.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,8 +18,20 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         backgroundColor: AppColors.primary200,
         toolbarHeight: 4.8.h,
+        leading: Icon(
+          Icons.menu,
+          color: AppColors.neutral100,
+          size: 2.9.h,
+        ),
       ),
-      body: Container(),
+      body: SingleChildScrollView(
+        child: Row(
+          children: const [
+            PomodoroDrawer(),
+            MainPage(),
+          ],
+        ),
+      ),
     );
   }
 }
